@@ -1,8 +1,8 @@
 # SQLite database (contains live data — never commit)
 data/
 
-# Claude Code local settings
-.claude/
+# Claude Code local settings (machine-specific)
+.claude/settings.local.json
 
 # PHP / editor artifacts
 *.swp
