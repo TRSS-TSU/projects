@@ -1,0 +1,18 @@
+# SQLite database (contains live data — never commit)
+data/
+
+# Claude Code local settings
+.claude/
+
+# PHP / editor artifacts
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Composer (not used, but just in case)
+vendor/
+
+# Environment overrides
+.env
+.env.local
