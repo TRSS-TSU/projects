@@ -22,8 +22,8 @@ if ($section === 'security' && $_SERVER['REQUEST_METHOD'] === 'POST') {
         $new_hash    = password_hash($new_pw, PASSWORD_BCRYPT);
         $config_path = APP_ROOT . '/src/config.php';
         $config_src  = file_get_contents($config_path);
-        $config_src  = preg_replace(
-            "/define\('PASSWORD_HASH',\s*'[^']+'\);/",
+        $config_src  = str_replace(
+            "define('PASSWORD_HASH', '" . PASSWORD_HASH . "');",
             "define('PASSWORD_HASH', '" . $new_hash . "');",
             $config_src
         );

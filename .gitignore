@@ -16,3 +16,6 @@ vendor/
 # Environment overrides
 .env
 .env.local
+
+# Local demo page — not for deployment
+public/demo.html
